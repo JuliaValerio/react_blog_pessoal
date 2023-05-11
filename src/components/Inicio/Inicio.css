@@ -1,0 +1,25 @@
+.inicio {
+  width: 75%;
+  height: auto;
+  background-color: #ffffff3e;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border-radius: .5em;
+  box-shadow: rgba(254, 254, 254, 0.24) 0px 3px 8px;
+}
+
+p{
+  margin-bottom: 1em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+  width: 10em;
+  margin: 1em;
+  height: auto;
+}

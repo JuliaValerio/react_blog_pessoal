@@ -1,0 +1,27 @@
+.personagens{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  
+}
+
+.row ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.row ul li{
+  display: flex;
+  width: 10em;
+  height: 10em;
+  margin: 3em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
