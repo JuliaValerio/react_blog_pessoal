@@ -1,24 +1,26 @@
-import React from 'react';
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import { Box } from '@mui/material'
+import { Link } from 'react-router-dom'
 import Logo from '../../../assets/img/CodeQueen.png'
-
+import './Navbar.css'
 
 function Navbar() {
     return (
         <>
-            <AppBar style={{backgroundColor: "#202024"}} position="static">
+            <AppBar style={{ backgroundColor: "#202024" }} position="static">
                 <Toolbar variant="dense">
                     <Box style={{ cursor: "pointer" }} >
-                        <img src={Logo} style={{width:"30%"}} />
+                        <img src={Logo} style={{ width: "30%" }} />
                     </Box>
 
                     <Box style={{ width: '100%' }} display="flex" justifyContent="center">
-                        <Box p={1} mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="initial">
-                                home
-                            </Typography>
-                        </Box>
+                        <Link to='/home' className='text-decorator-none'>
+                            <Box p={1} mx={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="h6" color="initial">
+                                    home
+                                </Typography>
+                            </Box>
+                        </Link>
                         <Box p={1} mx={1}>
                             <Typography variant="h6" color="initial">
                                 •
@@ -54,11 +56,13 @@ function Navbar() {
                                 •
                             </Typography>
                         </Box>
-                        <Box p={1} mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="initial">
-                                logout
-                            </Typography>
-                        </Box>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box p={1} mx={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="h6" color="initial">
+                                    logout
+                                </Typography>
+                            </Box>
+                        </Link>
                     </Box>
 
                 </Toolbar>
