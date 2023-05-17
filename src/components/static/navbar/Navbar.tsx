@@ -15,12 +15,12 @@ function Navbar() {
 
                     <Box style={{ width: '100%' }} display="flex" justifyContent="center">
                         <Box p={1} mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="white">
+                            <Typography variant="h6" color="initial">
                                 home
                             </Typography>
                         </Box>
                         <Box p={1} mx={1}>
-                            <Typography variant="h6" color="white">
+                            <Typography variant="h6" color="initial">
                                 •
                             </Typography>
                         </Box>
