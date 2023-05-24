@@ -1,0 +1,16 @@
+.input1{
+  margin-top: 1em !important;
+  margin-bottom: 1em !important;
+}
+
+.input2{
+  margin-bottom: 1em !important;
+}
+.input3{
+  margin-bottom: 1em !important;
+}
+
+#demo-simple-select-helper-label{
+  margin: -.55em !important;
+  margin-left: 0em !important;
+}
