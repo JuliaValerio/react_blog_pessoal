@@ -7,7 +7,7 @@ import {Box} from '@mui/material';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-
+import "./ListaPostagens.css"
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   let navigate = useNavigate();
@@ -17,7 +17,7 @@ function ListaPostagem() {
 
   useEffect(() => {
     if (token == "") {
-      toast.error('Você precisa estar logado', {
+      toast.error(' Você precisa estar logado', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: false,
@@ -51,7 +51,7 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box m={2} >
+          <Box m={1}>
             <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
@@ -72,14 +72,14 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Button variant="contained" className="marginLeft" size='small' style={{ backgroundColor: '#bb872c', color: 'white' }} >
                         atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                    <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                    <Box className="input4" mx={1}>
+                      <Button variant="contained" size='small' style={{ backgroundColor: '#973838', color: 'white' }}>
                         deletar
                       </Button>
                     </Box>

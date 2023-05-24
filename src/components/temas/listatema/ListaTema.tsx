@@ -66,7 +66,7 @@ function ListaTema() {
 
               <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box m={1}>
-                  <Button variant="contained" size='small' style={{ backgroundColor: '#215f20', color: 'white' }} >
+                  <Button variant="contained" size='small' style={{ backgroundColor: '#bb872c', color: 'white' }} >
                     atualizar
                   </Button>
                 </Box>

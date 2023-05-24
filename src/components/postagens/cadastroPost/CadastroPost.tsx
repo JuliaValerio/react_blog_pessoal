@@ -19,7 +19,7 @@ function CadastroPost() {
 
     useEffect(() => {
         if (token == "") {
-            toast.error('Você precisa estar logado', {
+            toast.error(' Você precisa estar logado', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -91,12 +91,12 @@ function CadastroPost() {
         console.log("postagem " + JSON.stringify(postagem))
 
         if (id !== undefined) {
-            put(`/postagens`, postagem, setPostagem, {
+            await put(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem atualizada com sucesso', {
+            toast.success(' Postagem atualizada com sucesso', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
@@ -107,12 +107,12 @@ function CadastroPost() {
                 progress: undefined,
             });
         } else {
-            post(`/postagens`, postagem, setPostagem, {
+            await post(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token
                 }
             })
-            toast.success('Postagem cadastrada com sucesso', {
+            toast.success(' Postagem cadastrada com sucesso', {
                 position: "top-right",
                 autoClose: 2000,
                 hideProgressBar: false,
