@@ -12,7 +12,8 @@ import { toast } from 'react-toastify';
 function Login() {
     let navigate = useNavigate();
     const dispatch = useDispatch();
-    const [token, setToken] = useState('');
+<!--     const [token, setToken] = useState(''); -->
+    const[token, setToken] = useLocalStorage('token');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
