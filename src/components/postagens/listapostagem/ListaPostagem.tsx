@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 import "./ListaPostagens.css"
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
+   const [token, setToken] = useLocalStorage('token');
   let navigate = useNavigate();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
