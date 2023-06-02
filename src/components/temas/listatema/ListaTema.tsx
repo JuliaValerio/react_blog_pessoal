@@ -12,6 +12,7 @@ import './ListaTemas.css'
 
 function ListaTema() {
   const [temas, setTemas] = useState<Tema[]>([])
+  
   let navigate = useNavigate();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
